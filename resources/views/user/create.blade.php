@@ -3,15 +3,18 @@
 @section('content')
     <!--Main container start -->
 
-    <main class="ttr-wrapper">
-        <div class="container-fluid">
-            <div class="db-breadcrumb">
-                <h4 class="breadcrumb-title">User Profile</h4>
-                <ul class="db-breadcrumb-list">
-                    <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-                    <li>User Profile</li>
-                </ul>
-            </div>
+    <div class="pagetitle">
+        <h1>صفحة المستخدم</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+            <li class="breadcrumb-item"></li>
+            <li class="breadcrumb-item active">المستخدم</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section class="section profile">
             <div class="row">
                 <!-- Your Profile Views Chart -->
                 <div class="col-lg-12 m-b30">
@@ -204,7 +207,6 @@
                 </div>
                 <!-- Your Profile Views Chart END-->
             </div>
-        </div>
-    </main>
-    <div class="ttr-overlay"></div>
+      </section>
+ 
 @endsection

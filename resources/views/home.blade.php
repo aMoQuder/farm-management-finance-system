@@ -16,12 +16,10 @@
 
     <section class="section dashboard">
         <div class="row">
-
-
             <div class="col-lg-4">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Radar Chart</h5>
+                    <h5 class="card-title">احصائيات المتابعة </h5>
 
                     <!-- Radar Chart -->
                     <div id="radarChart"></div>

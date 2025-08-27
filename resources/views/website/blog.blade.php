@@ -28,7 +28,7 @@
                             <div class="blo4 p-b-63">
                                 <div class="pic-blo4 hov-img-zoom bo-rad-10 pos-relative">
                                     <a href="blog-detail.html">
-                                        <img src="{{ asset('blog/img/' . $blog->image) }}" alt="IMG-BLOG">
+                                        <img src="{{ asset('blog/img/' . $blog->image) }}" style=" width: 100%; height: 500px;" alt="IMG-BLOG">
                                     </a>
 
 

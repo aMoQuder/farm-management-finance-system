@@ -414,6 +414,11 @@
                         <i class="bi bi-circle"></i><span>اضافة موظف</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('attendes') }}">
+                        <i class="bi bi-circle"></i><span>ادارة الغياب </span>
+                    </a>
+                </li>
 
             </ul>
         </li><!-- End Components Nav -->

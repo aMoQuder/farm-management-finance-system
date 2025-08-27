@@ -17,7 +17,7 @@ use Symfony\Component\Routing\Annotation\Route as AnnotationRoute;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
         // -----------------------------web navbar route  -----------------------------
         Route::post('/contactSave', 'ContactController@save')->name('contactSave');
@@ -61,7 +61,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 
 
 // -----------------------------users operation-----------------------------
@@ -230,6 +229,8 @@ Route::post('/workersExpenses{id}', 'ExpenseDetailsController@addExpense')->name
 //-------------------------------------------------------
 
 Route::delete('workers{workerId}/destory','WorkerController@delete')->name('workers.destory');
+Route::post('/attendes/getting', 'WorkerController@attendesGetting')->name('attend.getting');
+Route::get('/attendes', 'WorkerController@attendes')->name('attendes');
 Route::get('/ShowWorkers{worker}', 'WorkerController@show')->name('ShowWorker');
 Route::post('/saveWorkers', 'WorkerController@update')->name('saveWorkers');
 Route::get('/workers/create', [WorkerController::class, 'create'])->name('workers.create'); // صفحة انشاء  عامل
@@ -237,7 +238,10 @@ Route::post('/workers/store', [WorkerController::class, 'store'])->name('workers
 Route::get('/workers{worker}', [WorkerController::class, 'edit'])->name('workers.edit'); //  تعديل عامل
 Route::get('/workers', [WorkerController::class, 'index'])->name('workers.index'); // صفحة عرض جميع العمال
 // Worker Routes
+Route::post('/attendance/store', 'AttendanceController@storeAttendance')->name('attend.getting');
 
+
+Route::get('/attendance/data', 'AttendanceController@getAttendanceData')->name('attend');
 
 
 

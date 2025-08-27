@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    protected function store(UserRequest $request)
+    protected function store(Request $request)
     {
         $validatedData = $request->validate([
             'name' => 'required|min:5|max:25',

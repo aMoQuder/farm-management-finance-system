@@ -14,8 +14,7 @@ class CreateLandsTable extends Migration
             $table->integer('area'); // المساحة
             $table->timestamps();
             $table->unsignedBigInteger('supervisor_id'); // العامل المشرف على الأرض
-            // $table->unsignedBigInteger('supervisor_id')->default(0)->change(); // العامل المشرف على الأرض
-            $table->foreign('supervisor_id')->references('id')->on('workers');
+            $table->unsignedBigInteger('supervisor_id')->default(0)->change(); // العامل المشرف على الأرض
         });
     }
     public function down()

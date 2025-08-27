@@ -1,3 +1,4 @@
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -761,8 +762,188 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# calender
+--------------------------------------------------------------*/
+
+.calendar-container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    direction: ltr !important;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.calendar-controls button {
+    background: #eaeaea;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calendar-controls button:hover {
+    background: #bbb;
+}
+
+.calendar-scroll {
+    overflow-x: auto;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.calendar-table th,
+.calendar-table td {
+    border: 1px solid #ddd;
+    width: 14.28%;
+    position: relative;
+    vertical-align: top;
+    height: 40px;
+}
+
+.calendar-table thead tr {
+    background: #f9f9f9;
+}
+
+#daysRow th {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#datesRow td {
+    height: 60px;
+}
+
+.date-number {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+.current-day {
+    background-color: #2196F3;
+    color: white !important;
+    border-radius:5px;
+
+}
+
+.current-day .date-number {
+    color: white !important;
+
+}
+
+.worker-name {
+    background-color: #e84f65;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.worker-options {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    right: 10px;
+    top: -40px;
+    z-index: 1000;
+}
+
+.worker-options button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+
+}
+
+.worker-name:hover .worker-options {
+    display: block;
+}
+
+
+
+.calendar-table tbody tr {
+    transition: all 0.5s ease;
+}
+
+/* عند الانتقال */
+.fade-enter {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+/* زر التحكم */
+.calendar-controls button svg {
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------------
+#chart
+--------------------------------------------------------------*/
+
+.apexcharts-text tspan {
+    font-family: inherit;
+    direction: ltr;
+}
+/*--------------------------------------------------------------
 # my style of Design
 --------------------------------------------------------------*/
+.form-check-input:focus {
+    border-color: #0068f9 !important;
+
+}
+.check-row-head{
+    margin-left: 0px !important;
+}
+.check-row-body{
+    float: none !important;
+    background-color: #f1e6e6;
+    border: 4px solid #ccc9c99e;
+}
+
 
 .demo,
 .demohead {
@@ -827,7 +1008,32 @@ form .btn-primary {
     display: none;
 }
 
+/*--------------------------------------------------------------
+# spinner
+--------------------------------------------------------------*/
 
+
+ #global-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s ease;
+    }
+
+    #global-loader.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+/*--------------------------------------------------------------
+# spinner
+--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------

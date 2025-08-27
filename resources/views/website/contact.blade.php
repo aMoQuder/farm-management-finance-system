@@ -8,14 +8,7 @@
 
 	<!-- Contact form -->
 	<section class="section-contact bg1-pattern p-t-90 p-b-113">
-		<!-- Map -->
-		<div class="container">
-			<div class="map bo8 bo-rad-10 of-hidden">
-				<div class="contact-map size37" id="google_map" data-map-x="40.704644" data-map-y="-74.011987" data-pin="images/icons/icon-position-map.png" data-scrollwhell="0" data-draggable="1"></div>
-			</div>
-
-		</div>
-
+	
 		<div class="container">
 
             @if (session('success'))
@@ -91,63 +84,6 @@
 				</div>
 			</form>
 
-			<div class="row p-t-135">
-				<div class="col-sm-8 col-md-4 col-lg-4 m-l-r-auto p-t-30">
-					<div class="dis-flex m-l-23">
-						<div class="p-r-40 p-t-6">
-							<img src="images/icons/map-icon.png" alt="IMG-ICON">
-						</div>
-
-						<div class="flex-col-l">
-							<span class="txt5 p-b-10">
-								Location
-							</span>
-
-							<span class="txt23 size38">
-								8th floor, 379 Hudson St, New York, NY 10018
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-8 col-md-3 col-lg-4 m-l-r-auto p-t-30">
-					<div class="dis-flex m-l-23">
-						<div class="p-r-40 p-t-6">
-							<img src="images/icons/phone-icon.png" alt="IMG-ICON">
-						</div>
-
-
-						<div class="flex-col-l">
-							<span class="txt5 p-b-10">
-								Call Us
-							</span>
-
-							<span class="txt23 size38">
-								(+1) 96 716 6879
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-8 col-md-5 col-lg-4 m-l-r-auto p-t-30">
-					<div class="dis-flex m-l-23">
-						<div class="p-r-40 p-t-6">
-							<img src="images/icons/clock-icon.png" alt="IMG-ICON">
-						</div>
-
-
-						<div class="flex-col-l">
-							<span class="txt5 p-b-10">
-								Opening Hours
-							</span>
-
-							<span class="txt23 size38">
-								09:30 AM – 11:00 PM <br/>Every Day
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 

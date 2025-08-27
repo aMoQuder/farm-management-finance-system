@@ -4,50 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
     <!-- Scripts -->
+    <title>NewLand</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    {{-- خاصة bdf and excel and power point --}}
+    {{-- <script src="{{ asset('assets/vendor/officbage/xlsx74.full.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/officbage/html2pdf.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/officbage/pptxgen.bundle.js') }}"></script> --}}
+
+
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/_animate.min.css') }}" rel="stylesheet">
-    <!-- wow css -->
-    <link rel="stylesheet" href="css/wow of animate.css">
-    <!-- animate css  -->
-    <link rel="stylesheet" href="css/_animate.min.css">
-    <!-- font ossam css  -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- style css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/simple-datatables/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
-
-    <style>
-        .demo table {
-            text-align: center;
-
-
-        }
-
-        .demo {
-            direction: rtl;
-            text-align: right;
-        }
-    </style>
 </head>
-
 <body>
 
     <!-- welcome devolper -->
@@ -112,7 +97,7 @@
     <div id="app">
         <main class="py-4">
             <div class="container">
-                <div class="col-12 m-auto p-4 demo">
+                <div class="col-12 m-auto p-4 ">
                     @yield('content')
                 </div>
             </div>
@@ -121,21 +106,11 @@
     <!-- end project -->
     <!-- ------------------------------------------------------------------------------------------------------------- -->
     <!-- wow of js  -->
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <!-- font ossam js  -->
-    <script src="./js/all.min.js"></script>
-    <!-- jquery of js -->
-    <script src="./js/jquery.min.js"></script>
-    <!-- popper of js -->
-    <script src="./js/popper.min.js"></script>
-    <!-- bootstrap of js  -->
-    <script src="./js/bootstrap.min.js"></script>
-    <!-- main js  -->
-    <script src="./js/main.js"></script>
-     
+
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
 
 </body>

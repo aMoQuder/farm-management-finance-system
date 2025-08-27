@@ -49,7 +49,7 @@
                 <div  class="row mb-3">
                     <label class="col-sm-2 col-form-label" for="description">وصف المبلغ:</label>
                     <div class="col-sm-10">
-                        <textarea class="form-control" name="description" placeholder="{{ $CashBox->description }}" id="description"></textarea>
+                        <textarea class="form-control" name="description" placeholder="{{ $CashBox->description }}" id="description">{{ $CashBox->description }}</textarea>
                     </div>
 
 

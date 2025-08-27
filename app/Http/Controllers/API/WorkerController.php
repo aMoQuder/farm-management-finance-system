@@ -24,7 +24,7 @@ class WorkerController extends Controller {
 
 
 
-    
+
     public function show( $id ) {
         $workers = Worker::find( $id );
         if ( $workers ) {
@@ -75,7 +75,7 @@ class WorkerController extends Controller {
     public function update( $request ) {
         $old_id = $request->old_id;
         $worker = Worker::find( $old_id );
-        if ( $workers ) {
+        if ( $worker ) {
 
             $validatedData = validator( $request->all(), [
                 'name' => 'required|string',
@@ -104,7 +104,7 @@ class WorkerController extends Controller {
             $data = [
                 'msg'=>'this empolyee is update',
                 'status'=>1,
-                'data'=>new WorkerResourse( $workers ),
+                'data'=>new WorkerResourse( $worker ),
             ];
         } else {
             $data = [
@@ -140,7 +140,7 @@ class WorkerController extends Controller {
             return response()->json( $data );
         }
 
-        worker::create( [
+        $workers=worker::create( [
             'name' => $request->name,
             'salary' => $request->salary,
             'job' => $request->job,

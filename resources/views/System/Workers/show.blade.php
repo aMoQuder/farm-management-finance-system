@@ -44,7 +44,7 @@
                   <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
                     <h2> المرتب :{{ $worker->salary }} </h2>
-                    <h3> عدد ايام العمل : {{ $worker->work_days}}</h3>
+                    <h3> عدد ايام الغياب : {{ $days_absent}}</h3>
                     {{-- <h2>{{ $allexpen}} :كل المصاريف</h2> --}}
                     <h2>المبلغ المتبقي :{{ $diffsalary }} </h2>
 

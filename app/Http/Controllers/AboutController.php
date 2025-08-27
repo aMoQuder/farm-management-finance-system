@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class AboutController extends Controller
 {
-    public function index()
+    public function aboutAdmin()
     {
         return view('WebMonitor.website.about');
+    }
+    public function index()
+    {
+        return view('website.about');
     }
 
 }
